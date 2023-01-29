@@ -33,6 +33,10 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-size: 44px;
+}
+
 h2 {
   font-size: 34px;
   font-weight: 500;
@@ -53,6 +57,20 @@ li {
   list-style: none;
 }
 
+p {
+  font-size: 16px;
+}
+
+a {
+  display: block;
+  font-size: 14px;
+  text-decoration: underline;
+  padding-top: 45px;
+}
+a:hover {
+  opacity: 0.8;
+}
+
 button {
   display: inline-block;
   margin-top: 30px;
@@ -71,7 +89,6 @@ input,
 button {
   border: none;
   font-family: "Roboto", sans-serif;
-  font-size: inherit;
   border-radius: 100px;
   background: #070707;
   color: #FFFFFF;
@@ -85,7 +102,6 @@ button:focus {
 
 button,
 input[type=submit] {
-  background: none;
   cursor: pointer;
 }
 
@@ -99,36 +115,60 @@ input[type=submit] {
 }
 
 .nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-bottom: 30px;
   margin-top: 30px;
   border-bottom: 1px solid #828282;
   font-weight: 700;
   color: #828282;
 }
-.nav-menu:hover {
+.nav-menu li {
+  display: inline-block;
+  width: 23%;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.nav-menu li:first-child {
+  text-align: left;
+  width: 15%;
+}
+.nav-menu li:last-child {
+  text-align: right;
+  width: 15%;
+}
+.nav-menu a {
+  padding: 0;
+  text-decoration: none;
+}
+.nav-menu a:hover {
   color: #070707;
 }
 
+body {
+  font-size: 0;
+}
+
 .home {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
   padding-bottom: 30px;
   margin: 0 auto;
 }
+.home .w-30 {
+  display: inline-block;
+  width: 33%;
+}
 .home .home-left {
+  text-align: left;
+}
+.home .home-left h1 {
   max-width: 124px;
   line-height: 59px;
 }
 .home .home-right {
-  writing-mode: vertical-rl;
-  transform: rotate(-90deg);
+  text-align: right;
+}
+.home .home-right .home-right-p {
   color: #828282;
 }
-.home .home-right:active {
+.home .home-right .home-right-p:active {
   color: #070707;
 }
 
@@ -142,10 +182,9 @@ h1 {
 }
 
 .AboutMe {
-  display: inline-block;
-  justify-content: center;
   width: 485px;
   padding-bottom: 120px;
+  margin: 0 auto;
 }
 .AboutMe p {
   padding-bottom: 18px;
@@ -153,22 +192,26 @@ h1 {
 .AboutMe p:last-child {
   padding-bottom: 0;
 }
+.AboutMe p span {
+  display: block;
+}
 
 .skills {
-  display: flex;
-  justify-content: space-between;
   padding-top: 84px;
 }
-.skills .figma-svg {
-  height: 145px;
+.skills .ai-svg, .skills .ps-svg, .skills .ae-svg, .skills .figma-svg {
+  height: 100px;
+  width: auto;
 }
-.skills .stars {
-  display: flex;
-  justify-content: space-between;
+.skills .skills-list {
+  display: inline-block;
+  width: 25%;
 }
 .skills .star {
+  display: inline-block;
   padding-top: 40px;
   margin-right: 9px;
+  width: auto;
 }
 .skills .star:last-child {
   margin-right: 0;
@@ -179,20 +222,21 @@ h1 {
   max-width: none;
 }
 
-.portfolio_items .fashion, .portfolio_items .reebok, .portfolio_items .braun {
+.portfolio_items .fashion, .portfolio_items .reebok {
   padding-bottom: 100px;
-}
-.portfolio_items img {
-  padding-bottom: 45px;
 }
 
 .contacts {
-  flex-wrap: nowrap;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
   width: 345px;
   padding-bottom: 120px;
+  margin: 0 auto;
+}
+.contacts a {
+  display: inline-block;
+  margin-right: 60px;
+}
+.contacts a:last-child {
+  margin: 0;
 }
 
 .footer-link {

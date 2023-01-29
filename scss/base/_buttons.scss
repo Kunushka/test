@@ -17,7 +17,7 @@ input,
 button {
     border: none;
     font-family: 'Roboto', sans-serif;
-    font-size: inherit;
+    // font-size: inherit;
     border-radius: 100px;
     background: #070707;
     color: #FFFFFF;
@@ -31,6 +31,5 @@ button:focus {
 
 button,
 input[type="submit"] {
-    background: none;
     cursor: pointer;
 }

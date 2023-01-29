@@ -9,6 +9,10 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 44px;
+}
+
 h2 {
     font-size: 34px;
     font-weight: 500;
@@ -27,4 +31,18 @@ h3 {
 ul,
 li {
     list-style: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    display: block;
+    font-size: 14px;
+    text-decoration: underline;
+    padding-top: 45px;
+    &:hover {
+        opacity: 0.8;
+    }
 }

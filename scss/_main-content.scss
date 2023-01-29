@@ -1,22 +1,37 @@
+body {
+    font-size: 0;
+}
+
 .home {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: flex-end;
+    // justify-content: space-between;
     padding-bottom: 30px;
     margin: 0 auto;
 
+    .w-30 {
+        display: inline-block;
+        width: 33%;
+    }
+
     .home-left {
-        max-width: 124px;
-        line-height: 59px;
+        text-align: left;
+
+        h1 {
+            max-width: 124px;
+            line-height: 59px;
+        }
     }
 
     .home-right {
-        writing-mode: vertical-rl;
-        transform: rotate(-90deg);
-        color: #828282;
+        text-align: right;
 
-        &:active {
-            color: #070707;
+        .home-right-p {
+            color: #828282;
+
+            &:active {
+                color: #070707;
+            }
         }
     }
 }
@@ -31,10 +46,10 @@ h1 {
 }
 
 .AboutMe {
-    display: inline-block;
-    justify-content: center;
+    // display: inline-block;
     width: 485px;
     padding-bottom: 120px;
+    margin: 0 auto;
 
     p {
         padding-bottom: 18px;
@@ -42,26 +57,33 @@ h1 {
         &:last-child {
             padding-bottom: 0;
         }
+
+        span {
+            display: block;
+        }
     }
 }
 
 .skills {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     padding-top: 84px;
 
-    .figma-svg {
-        height: 145px;
+    .ai-svg, .ps-svg, .ae-svg, .figma-svg {
+        height: 100px;
+        width: auto;
     }
 
-    .stars {
-        display: flex;
-        justify-content: space-between;
+    .skills-list {
+        display: inline-block;
+        width: 25%;
     }
 
     .star {
+        display: inline-block;
         padding-top: 40px;
         margin-right: 9px;
+        width: auto;
 
         &:last-child {
             margin-right: 0;
@@ -75,22 +97,27 @@ h1 {
 }
 
 .portfolio_items {
-    .fashion, .reebok, .braun {
+    .fashion, .reebok {
         padding-bottom: 100px;
-    }
-
-    img {
-        padding-bottom: 45px;
     }
 }
 
 .contacts {
-    flex-wrap: nowrap;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
+    // flex-wrap: nowrap;
+    // display: inline-flex;
+    // align-items: center;
+    // justify-content: space-between;
     width: 345px;
     padding-bottom: 120px;
+    margin: 0 auto;
+
+    a {
+        display: inline-block;
+        margin-right: 60px;
+        &:last-child {
+            margin: 0;
+        }
+    }
 }
 
 .footer-link {
