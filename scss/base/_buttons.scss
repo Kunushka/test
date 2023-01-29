@@ -1,0 +1,36 @@
+button {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 85px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #070707;
+    border-radius: 50px;
+    font-size: 18px;
+
+    :hover {
+        opacity: 0.8;
+    }
+}
+
+input,
+button {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: inherit;
+    border-radius: 100px;
+    background: #070707;
+    color: #FFFFFF;
+    padding: 13px 30px;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+button,
+input[type="submit"] {
+    background: none;
+    cursor: pointer;
+}

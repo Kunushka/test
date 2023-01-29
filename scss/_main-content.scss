@@ -1,0 +1,98 @@
+.home {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    margin: 0 auto;
+
+    .home-left {
+        max-width: 124px;
+        line-height: 59px;
+    }
+
+    .home-right {
+        writing-mode: vertical-rl;
+        transform: rotate(-90deg);
+        color: #828282;
+
+        &:active {
+            color: #070707;
+        }
+    }
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.home-about {
+    background-color: #F6F6F6;
+    max-width: none;
+}
+
+.AboutMe {
+    display: inline-block;
+    justify-content: center;
+    width: 485px;
+    padding-bottom: 120px;
+
+    p {
+        padding-bottom: 18px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 84px;
+
+    .figma-svg {
+        height: 145px;
+    }
+
+    .stars {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .star {
+        padding-top: 40px;
+        margin-right: 9px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.wrapper {
+    background-color: #F6F6F6;
+    max-width: none;
+}
+
+.portfolio_items {
+    .fashion, .reebok, .braun {
+        padding-bottom: 100px;
+    }
+
+    img {
+        padding-bottom: 45px;
+    }
+}
+
+.contacts {
+    flex-wrap: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 345px;
+    padding-bottom: 120px;
+}
+
+.footer-link {
+    color: #828282;
+}

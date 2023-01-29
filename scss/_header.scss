@@ -1,0 +1,24 @@
+.container {
+    max-width: 945px;
+    margin: 0 auto;
+    padding-bottom: 105px;
+
+    &.cont-header {
+        padding-bottom: 30px;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    border-bottom: 1px solid #828282;
+    font-weight: 700;
+    color: #828282;
+
+    &:hover {
+        color: #070707;
+    }
+}

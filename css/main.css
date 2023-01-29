@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #070707;
+  text-align: center;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 500;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 85px;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #070707;
+  border-radius: 50px;
+  font-size: 18px;
+}
+button :hover {
+  opacity: 0.8;
+}
+
+input,
+button {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: inherit;
+  border-radius: 100px;
+  background: #070707;
+  color: #FFFFFF;
+  padding: 13px 30px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+button,
+input[type=submit] {
+  background: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 945px;
+  margin: 0 auto;
+  padding-bottom: 105px;
+}
+.container.cont-header {
+  padding-bottom: 30px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  border-bottom: 1px solid #828282;
+  font-weight: 700;
+  color: #828282;
+}
+.nav-menu:hover {
+  color: #070707;
+}
+
+.home {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+.home .home-left {
+  max-width: 124px;
+  line-height: 59px;
+}
+.home .home-right {
+  writing-mode: vertical-rl;
+  transform: rotate(-90deg);
+  color: #828282;
+}
+.home .home-right:active {
+  color: #070707;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.home-about {
+  background-color: #F6F6F6;
+  max-width: none;
+}
+
+.AboutMe {
+  display: inline-block;
+  justify-content: center;
+  width: 485px;
+  padding-bottom: 120px;
+}
+.AboutMe p {
+  padding-bottom: 18px;
+}
+.AboutMe p:last-child {
+  padding-bottom: 0;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 84px;
+}
+.skills .figma-svg {
+  height: 145px;
+}
+.skills .stars {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .star {
+  padding-top: 40px;
+  margin-right: 9px;
+}
+.skills .star:last-child {
+  margin-right: 0;
+}
+
+.wrapper {
+  background-color: #F6F6F6;
+  max-width: none;
+}
+
+.portfolio_items .fashion, .portfolio_items .reebok, .portfolio_items .braun {
+  padding-bottom: 100px;
+}
+.portfolio_items img {
+  padding-bottom: 45px;
+}
+
+.contacts {
+  flex-wrap: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 345px;
+  padding-bottom: 120px;
+}
+
+.footer-link {
+  color: #828282;
+}/*# sourceMappingURL=main.css.map */
