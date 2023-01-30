@@ -181,18 +181,18 @@ h1 {
   max-width: none;
 }
 
-.AboutMe {
+.about-me {
   width: 485px;
   padding-bottom: 120px;
   margin: 0 auto;
 }
-.AboutMe p {
+.about-me p {
   padding-bottom: 18px;
 }
-.AboutMe p:last-child {
+.about-me p:last-child {
   padding-bottom: 0;
 }
-.AboutMe p span {
+.about-me p span {
   display: block;
 }
 
