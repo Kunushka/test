@@ -45,7 +45,7 @@ h1 {
     max-width: none;
 }
 
-.AboutMe {
+.about-me {
     // display: inline-block;
     width: 485px;
     padding-bottom: 120px;
@@ -114,6 +114,7 @@ h1 {
     a {
         display: inline-block;
         margin-right: 60px;
+
         &:last-child {
             margin: 0;
         }
